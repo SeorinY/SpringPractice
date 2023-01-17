@@ -1,4 +1,4 @@
-package seorin.org.practice.controller.Http;
+package seorin.org.practice.Http;
 
 import org.springframework.http.ResponseEntity;
 
@@ -26,7 +26,7 @@ public class ApiResponse {
     }
 
     public static ResponseEntity<?> error(ErrorType errorType, String message) {
-        JsonResponse<Object> response = new JsonResponse<>(errorType.getHttpStatusCode(),message);
+        JsonResponse<Object> response = new JsonResponse<>(errorType.getHttpStatusCode(), message);
         return ResponseEntity
                 .status(errorType.getHttpStatusCode())
                 .body(response);
