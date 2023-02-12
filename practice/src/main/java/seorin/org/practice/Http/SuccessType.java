@@ -1,11 +1,10 @@
-package seorin.org.practice.controller.Http;
+package seorin.org.practice.Http;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
-@Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum SuccessType {
 
@@ -32,5 +31,9 @@ public enum SuccessType {
 
     public int getHttpStatusCode() {
         return httpStatus.value();
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
