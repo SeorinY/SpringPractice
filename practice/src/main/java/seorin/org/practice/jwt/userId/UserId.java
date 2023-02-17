@@ -1,4 +1,4 @@
-package seorin.org.practice.jwt;
+package seorin.org.practice.jwt.userId;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
