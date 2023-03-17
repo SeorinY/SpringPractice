@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class PostResponseDto {
+public class PostTestResponse {
 
     private String result;
 }
