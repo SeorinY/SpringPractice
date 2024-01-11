@@ -1,6 +1,6 @@
 package seorin.org.practice.exception;
 
-import seorin.org.practice.Http.ErrorType;
+import seorin.org.practice.http.ErrorType;
 
 public class NotFoundException extends BusinessException {
 

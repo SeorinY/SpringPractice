@@ -1,8 +1,7 @@
-package seorin.org.practice.Http;
+package seorin.org.practice.http;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)

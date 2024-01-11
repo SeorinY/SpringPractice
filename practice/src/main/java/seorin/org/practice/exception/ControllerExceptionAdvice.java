@@ -2,19 +2,16 @@ package seorin.org.practice.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.exception.ConstraintViolationException;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import seorin.org.practice.Http.ApiResponse;
-import seorin.org.practice.Http.ErrorType;
+import seorin.org.practice.http.ApiResponse;
+import seorin.org.practice.http.ErrorType;
 
-import java.io.IOException;
 import java.util.Objects;
 
 @Slf4j
@@ -47,7 +44,6 @@ public class ControllerExceptionAdvice {
      */
     @ExceptionHandler(Exception.class)
     protected ResponseEntity<?> handleInternalServerException(Exception e) {
-        log.info("e ={}", e);
         return ApiResponse.error(ErrorType.INTERNAL_SERVER_ERROR);
     }
 
