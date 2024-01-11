@@ -5,12 +5,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import seorin.org.practice.Http.ApiResponse;
-import seorin.org.practice.Http.SuccessType;
+import seorin.org.practice.http.ApiResponse;
+import seorin.org.practice.http.SuccessType;
 import seorin.org.practice.jwt.JwtService;
 import seorin.org.practice.jwt.login.dto.UserLoginRequestDto;
 import seorin.org.practice.jwt.login.dto.UserLoginResponseDto;
 import seorin.org.practice.jwt.userId.UserId;
+
 
 @RestController
 @RequiredArgsConstructor
